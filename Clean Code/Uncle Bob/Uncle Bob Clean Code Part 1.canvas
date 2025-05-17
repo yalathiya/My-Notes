@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"dd74af0258a5be6c","type":"text","text":"Follow \"The rule of 1\":\nOne of the most earlier and proven rule of computer science.\n\n- 1 function should do 1 thing.","x":-340,"y":55,"width":387,"height":155},
+		{"id":"568e2094a3fad18a","type":"text","text":"How to define this could be a single function ?\n\nThrough the abstraction, abstract & abstract a function until it's objective remains only 1 thing.\n\nYou can give meaningful name to each function.\n\nMake it obvious if someone's is going through it. \n\nTry to write a short function.","x":-400,"y":270,"width":500,"height":250},
+		{"id":"bb3d613d2487fe55","type":"text","text":"> Write code in such a way that it looks like Its written by someone who cared.","x":-1280,"y":210,"width":390,"height":90},
+		{"id":"c7b1441dcae2295f","x":-400,"y":600,"width":660,"height":180,"type":"text","text":"Try to provide minimum arguments in function's signature.\n\nIf you need 3 or more arguments to execute a function every time, then it can be a class. make it's object. It makes more sense.\n\nIf you're passing even 4 parameters for which logically decision has been taken, It can consist mathematically 4! = 24 cases, which is too hard to visualize humanly. "},
+		{"id":"453072470f838975","x":-340,"y":-560,"width":480,"height":200,"type":"text","text":"Everyone writes mess of code at first, \nyou should spend same amount of time to optimize it as much time you've spent to make it work.\nIf you don't, It'll slow down you next time when you want to make the changes in that code\n\nParadigm of \"Why Programmers are slow ?\""},
+		{"id":"931d98a8cbe43617","type":"text","text":"General rules or things to be considered","x":-740,"y":-205,"width":250,"height":85},
+		{"id":"09eec3e922652c38","type":"text","text":"It's not me who can explain or give inspiration about clean/good code,\nIt's my code which explains as well as set new standards for my fellow or other developers.","x":-340,"y":-280,"width":405,"height":150},
+		{"id":"4c4a57fc556e0b8a","type":"text","text":"Use DRY principle.\nDo not repeat yourself.","x":-271,"y":-60,"width":250,"height":60},
+		{"id":"f73f5ad9019b5a02","type":"text","text":"Technical Rules","x":-720,"y":600,"width":172,"height":60},
+		{"id":"ce2ab7aa1f52defd","x":-400,"y":870,"width":600,"height":190,"type":"text","text":"Try to avoid switch cases\n\nAs It'll be much complicated while you have to add a case in that,\nyou've to go through every switch block & logically put a new case there.\n\nYou should use \"Polymorphism\" instead. \neg. Parent class --> Shape, Subclass --> Circle, Square etc.\n"},
+		{"id":"d88a1462981bdde8","x":-1160,"y":940,"width":558,"height":613,"type":"text","text":"Try to avoid passing a boolean parameter in function as \nthere me a huge chances to you'll write code like this.\n\n`mainFunc(){`\n\t`func1(true);`\n`}`\n`func1(boolean isTrue){`\n\t`if (isTrue){`\n\t\t`Do1Thing();`\n\t`}`\n\t`else{`\n\t\t`DoAnotherThing();`\n\t`}`\n`}`\n\nbut you should write your code like this:\n\n`mainFunc(){`\n\t`if(true){`\n\t\t`Do1Thing();`\n\t`}`\n\t`else{`\n\t\t`DoAnotherThing();`\n\t`}`\n`}`"}
+	],
+	"edges":[
+		{"id":"178a332aa74ce3b2","fromNode":"931d98a8cbe43617","fromSide":"right","toNode":"09eec3e922652c38","toSide":"left"},
+		{"id":"7a5a1373246cf8b1","fromNode":"931d98a8cbe43617","fromSide":"right","toNode":"4c4a57fc556e0b8a","toSide":"left"},
+		{"id":"a22ff1cf7159dd0d","fromNode":"931d98a8cbe43617","fromSide":"right","toNode":"dd74af0258a5be6c","toSide":"left"},
+		{"id":"57433b93849d528e","fromNode":"f73f5ad9019b5a02","fromSide":"right","toNode":"568e2094a3fad18a","toSide":"left"},
+		{"id":"ea9cae2e1e86db90","fromNode":"bb3d613d2487fe55","fromSide":"right","toNode":"931d98a8cbe43617","toSide":"left"},
+		{"id":"9ec65636f10cf31f","fromNode":"bb3d613d2487fe55","fromSide":"right","toNode":"f73f5ad9019b5a02","toSide":"left"},
+		{"id":"a277ce372cdceec0","fromNode":"931d98a8cbe43617","fromSide":"right","toNode":"453072470f838975","toSide":"left"},
+		{"id":"43c2a43b0ec085b4","fromNode":"f73f5ad9019b5a02","fromSide":"right","toNode":"c7b1441dcae2295f","toSide":"left"},
+		{"id":"9e78513bcc44ab33","fromNode":"f73f5ad9019b5a02","fromSide":"bottom","toNode":"d88a1462981bdde8","toSide":"top"},
+		{"id":"c2cb3d460aa1afc6","fromNode":"f73f5ad9019b5a02","fromSide":"bottom","toNode":"ce2ab7aa1f52defd","toSide":"left"}
+	]
+}
